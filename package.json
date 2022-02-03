@@ -1,0 +1,15 @@
+{
+  "name": "doodlebox",
+  "version": "1.0.0",
+  "description": "Basic drawing app built with p5.js.",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}
