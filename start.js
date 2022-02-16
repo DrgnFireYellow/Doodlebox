@@ -1,5 +1,5 @@
 const { exec } = require("child_process")
-exec('npx http-server -p 80', (stdout) => {
+exec('npx http-server', (stdout) => {
   console.log(stdout)
-  console.log("doodlebox is running on port 80")
+  console.log("doodlebox is running on port 8080")
 })
