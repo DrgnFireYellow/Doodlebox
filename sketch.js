@@ -38,6 +38,9 @@ function setblack() {
   enterpaintmode()
   c = "black"
 }
+function saveDrawing() {
+  saveCanvas("drawing", "png")
+}
 function setup() {
   createCanvas(1000, 700);
   background(255);
@@ -50,6 +53,7 @@ function setup() {
   purplebutton = createButton("purple")
   blackbutton = createButton("black")
   eraserbutton = createButton("<img src=\"erase.svg\">")
+  savebutton  = createButton("save")
   // what to do when buttons are clicked
   redbutton.mousePressed(setred);
   orangebutton.mousePressed(setorange);
@@ -59,6 +63,7 @@ function setup() {
   purplebutton.mousePressed(setpurple);
   blackbutton.mousePressed(setblack);
   eraserbutton.mousePressed(eraser);
+  savebutton.mousePressed(saveDrawing)
   // style buttons
   redbutton.style("background-color: red; color: white;");
   orangebutton.style("background-color: orange; color: white;");
